@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Photo Blog</string>
+    <string name="welcome_logo_for_login_page">welcome logo for login page</string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_password">Enter password</string>
+    <string name="login_to_account">Login to Account</string>
+    <string name="need_a_new_account"><u>Need a new Account?</u></string>
+    <string name="please_wait">Please wait…</string>
+    <string name="search">Search</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="logout">Logout</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="create_account">Create Account</string>
+    <string name="already_have_an_account"><u>Already have an Account?</u></string>
+    <string name="default_profile_image">default profile image</string>
+
+    <string name="permission_preference">PERMISSION_PREFERENCE</string>
+    <string name="permission_read_external_storage">PERMISSION_READ_EXTERNAL_STORAGE</string>
+    <string name="permission_write_external_storage">PERMISSION_WRITE_EXTERNAL_STORAGE</string>
+
+    <string name="permission_read_external_storage_rational">This app needs read external storage/SD card permission because without this permission you could not choose any photo and update your profile image.</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="save_account_settings">Save Account Settings</string>
+    <string name="skip">Skip</string>
+    <string name="post_description">Add a post description</string>
+    <string name="publish_post">Publish Post</string>
+    <string name="blog_post_image_description">blog post image description</string>
+    <string name="forgot_password">Forgot password?</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="notification">Notification</string>
+    <string name="home">Home</string>
+    <string name="account">Account</string>
+    <string name="no_post_found">No post found</string>
+    <string name="like_image_button">like image button</string>
+    <string name="post_comment_description">post comment description</string>
+    <string name="write_a_comment">Write a comment…</string>
+    <string name="comment_send_button">comment send button</string>
+    <string name="post_more_option">post more option</string>
+    <string name="show_password">Show Password</string>
+    <string name="delete_post">Delete post</string>
+    <string name="edit_post">Edit post</string>
+    <string name="like">Like</string>
+    <string name="comment">Comment</string>
+    <string name="reply">Reply</string>
+    <string name="share">Share</string>
+    <string name="enter_your_designation">Enter your designation</string>
+    <string name="follow">Follow</string>
+    <string name="following">Following</string>
+    <string name="followers">Followers</string>
+    <string name="posts">Posts</string>
+</resources>

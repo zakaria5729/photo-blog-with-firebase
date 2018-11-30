@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteY="25dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/main_blog_post_card_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="8dp"
+        android:translationZ="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:targetApi="lollipop">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="17dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/blog_user_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/user_image_placeholder"
+                app:layout_constraintEnd_toStartOf="@+id/blog_user_name"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/blog_user_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/post_more_button"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/blog_user_image"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Username" />
+
+            <TextView
+                android:id="@+id/blog_post_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toEndOf="@+id/blog_user_image"
+                app:layout_constraintTop_toBottomOf="@+id/blog_user_name"
+                tools:text="Blog post date" />
+
+            <ImageView
+                android:id="@+id/post_more_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="@string/post_more_option"
+                app:layout_constraintBottom_toTopOf="@+id/blog_post_description"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/blog_user_name"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_post_more_option_icon" />
+
+            <TextView
+                android:id="@+id/blog_post_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textAppearance="?android:textAppearanceMedium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/blog_user_image"
+                tools:text="Lorem ipsum dolor sit amet, soluta regione urbanitas vis in, qui elit populo ut. Lorem ips dolor sit amet, soluta regione urbanitas vis in, qui elit populo ut. " />
+
+            <ImageView
+                android:id="@+id/blog_post_image"
+                android:layout_width="0dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/blog_post_image_description"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/blog_post_description"
+                app:srcCompat="@drawable/post_image_placeholder" />
+
+            <TextView
+                android:id="@+id/post_like_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/post_comment_counter"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/post_comment_counter"
+                tools:text="0 Likes" />
+
+            <TextView
+                android:id="@+id/post_comment_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center_horizontal"
+                app:layout_constraintEnd_toStartOf="@+id/post_share_counter"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/post_like_counter"
+                app:layout_constraintTop_toBottomOf="@+id/blog_post_image"
+                tools:text="0 Comments" />
+
+            <TextView
+                android:id="@+id/post_share_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="0 Shares"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/post_comment_counter"
+                app:layout_constraintTop_toTopOf="@+id/post_comment_counter" />
+
+            <TextView
+                android:id="@+id/post_like_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:drawableStart="@drawable/ic_like_gray_icon"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/like"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/post_comment_button"
+                app:layout_constraintEnd_toStartOf="@+id/post_comment_button"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/post_comment_button" />
+
+            <TextView
+                android:id="@+id/post_comment_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="8dp"
+                android:drawableStart="@drawable/ic_comment_icon"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/comment"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/post_share_button"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/post_like_button"
+                app:layout_constraintTop_toBottomOf="@+id/blog_post_image"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/post_share_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:drawableStart="@drawable/ic_share_icon"
+                android:drawablePadding="5dp"
+                android:gravity=""
+                android:text="@string/share"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/post_comment_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/post_comment_button"
+                app:layout_constraintTop_toTopOf="@+id/post_comment_button" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

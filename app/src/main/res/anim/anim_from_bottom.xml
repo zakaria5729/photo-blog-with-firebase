@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <translate
+        android:duration="1000"
+        android:fromYDelta="100%p"
+        android:fromXDelta="0%p" />
+
+</set>
+
+
+<!--
+fromXDelta  Change in X coordinate to apply at the start of the animation
+toXDelta    Change in X coordinate to apply at the end of the animation
+fromYDelta  Change in Y coordinate to apply at the start of the animation
+toYDelta    Change in Y coordinate to apply at the end of the animation-->
